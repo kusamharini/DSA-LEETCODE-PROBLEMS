@@ -1,0 +1,18 @@
+class Solution {
+    public String longestCommonPrefix(String[] strs) {
+        for(int i = 1; i < strs.length; i++) {
+            while (! sttrs[i].startsWith(prefix)) {
+                prefix = prefix.sunstring(0, prefix.length() - 1);
+                if (prefix.isEmpty())
+                return " ";
+            }
+        }
+        return prefix;
+        
+    }
+}
+
+Example:
+Input:
+strs= [ "flower", "flow", "flight"]
+Output: "fl"1
